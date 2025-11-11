@@ -42,7 +42,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-black/10">
+      <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-lg z-50 border-b border-black/5 shadow-sm">
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
           <h1 className="text-2xl font-bold tracking-wider">SFMOMA</h1>
           <div className="hidden md:flex gap-8 items-center">
@@ -215,8 +215,9 @@ const Index = () => {
         </div>
       </section>
 
-      <footer className="bg-black text-white py-12">
-        <div className="container mx-auto px-6">
+      <footer className="relative bg-black/90 backdrop-blur-xl text-white py-12 border-t border-white/10">
+        <div className="absolute inset-0 bg-gradient-to-b from-white/5 to-transparent pointer-events-none" />
+        <div className="container mx-auto px-6 relative z-10">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <h4 className="text-xl font-bold mb-4">SFMOMA</h4>
@@ -247,7 +248,7 @@ const Index = () => {
               </div>
             </div>
           </div>
-          <div className="border-t border-white/20 pt-8 text-center text-sm text-white/70">
+          <div className="border-t border-white/10 pt-8 text-center text-sm text-white/70">
             <p>© 2025 San Francisco Museum of Modern Art</p>
           </div>
         </div>
